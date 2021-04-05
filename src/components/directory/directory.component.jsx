@@ -1,6 +1,11 @@
 import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
 import './directory.styles.scss';
+import jackets from '../../images/jackets.jpg';
+import jeans from '../../images/jeans.jpg';
+import shoes from '../../images/shoes.jpg';
+import women from '../../images/women.jpg';
+import men from '../../images/men.jpg';
 
 class Directory extends React.Component {
 	constructor() {
@@ -9,29 +14,29 @@ class Directory extends React.Component {
 		this.state = {
 			sections: [
 				{
-					title: 'hats',
-					imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+					title: 'jeans',
+					imageUrl: `${jeans}`,
 					id: 1,
 				},
 				{
 					title: 'jackets',
-					imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+					imageUrl: `${jackets}`,
 					id: 2,
 				},
 				{
-					title: 'sneakers',
-					imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+					title: 'shoes',
+					imageUrl: `${shoes}`,
 					id: 3,
 				},
 				{
 					title: 'womens',
-					imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+					imageUrl: `${women}`,
 					size: 'large',
 					id: 4,
 				},
 				{
 					title: 'mens',
-					imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+					imageUrl: `${men}`,
 					size: 'large',
 					id: 5,
 				},
